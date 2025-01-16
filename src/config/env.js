@@ -1,30 +1,34 @@
-// Question: Pourquoi est-il important de valider les variables d'environnement au démarrage ?
-// Réponse : 
-// Question: Que se passe-t-il si une variable requise est manquante ?
-// Réponse : 
-
 const dotenv = require('dotenv');
 dotenv.config();
 
 const requiredEnvVars = [
-  'MONGODB_URI',
-  'MONGODB_DB_NAME',
-  'REDIS_URI'
+  'MONGO_URI',
+  'MONGO_DB_NAME',
+  'REDIS_URI',
+  'PORT'
 ];
 
-// Validation des variables d'environnement
+/**
+ * Validates the presence of required environment variables.
+ * 
+ * This function checks if all required environment variables are set in the process environment.
+ * If any required environment variables are missing, it throws an error listing the missing variables.
+ * 
+ * @throws {Error} If any required environment variables are missing.
+ */
 function validateEnv() {
-  // TODO: Implémenter la validation
-  // Si une variable manque, lever une erreur explicative
+  const missingVars = requiredEnvVars.filter((varName) => !process.env[varName]);
+
+  if (missingVars.length > 0) {
+    throw new Error(`Les variables d'environnement suivantes sont manquantes : ${missingVars.join(', ')}`);
+  }
 }
 
+validateEnv();
+
 module.exports = {
-  mongodb: {
-    uri: process.env.MONGODB_URI,
-    dbName: process.env.MONGODB_DB_NAME
-  },
-  redis: {
-    uri: process.env.REDIS_URI
-  },
-  port: process.env.PORT || 3000
+  mongoUri: process.env.MONGO_URI,
+  mongoDbName: process.env.MONGO_DB_NAME,
+  redisUri: process.env.REDIS_URI,
+  port: process.env.PORT
 };
