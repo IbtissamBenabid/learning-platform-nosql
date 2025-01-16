@@ -1,3 +1,13 @@
-# Compléter ici !!!!???
+.env
+
+*.log
+
+dist/
+build/
+
+tmp/
+temp/
+
+docker-compose.yml
 
 node_modules
