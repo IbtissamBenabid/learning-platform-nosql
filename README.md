@@ -111,13 +111,28 @@ app.js : Point d'entrée de l'application.
 ## Résultats des Requêtes
 
 *Description*: L'application lancée en port 3000.
-![App running](./screenshots/Acces_au_bd.png)
+
+<div align="center">
+<img src="./screenshots/Acces_au_bd.png" alt="App running" width="600">
+</div>
+
 *Description*: Le résultat de la requete "POST" pour a création d'un cours .
-![Post request for creating a course](./screenshots/create_course.png)
+
+<div align="center">
+<img src="./screenshots/create_course.png" alt="Post request for creating a course" width="600">
+</div>
+
 *Description*: Le résultat de la requete "GET" pour a chercher un cours via son id .
-![Get request for getting a course by id](./screenshots/get_course.png)
+
+<div align="center">
+<img src="./screenshots/get_course.png" alt="Get request for getting a course by id" width="600">
+</div>
+
 *Description*: Le résultat de la requete "GET" pour a renvoyer tous les cours .
-![Get request for getting all courses](./screenshots/get_course_stats.png)
+
+<div align="center">
+<img src="./screenshots/get_couse_stats.png" alt="Get request for getting all courses" width="600">
+</div>
 
 
 ## Auteur
