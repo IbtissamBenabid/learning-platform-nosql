@@ -63,7 +63,7 @@ async function getCourse(req, res) {
   }
 }
 
-  + /**
+   /**
   +  * Retrieves course statistics.
   +  *
   +  * @param {Object} res - The response object.
