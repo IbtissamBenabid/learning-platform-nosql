@@ -110,8 +110,16 @@ app.js : Point d'entrée de l'application.
 
 ## Résultats des Requêtes
 
-Les résultats des requêtes utilisant Thunder Client sont disponibles dans le dossier `screenshots`.
+*Description*: L'application lancée en port 3000.
+![App running](./screenshots/Acces_au_bd.png)
+*Description*: Le résultat de la requete "POST" pour a création d'un cours .
+![Post request for creating a course](./screenshots/create_course.png)
+*Description*: Le résultat de la requete "GET" pour a chercher un cours via son id .
+![Get request for getting a course by id](./screenshots/get_course.png)
+*Description*: Le résultat de la requete "GET" pour a renvoyer tous les cours .
+![Get request for getting all courses](./screenshots/get_course_stats.png)
+
 
 ## Auteur
 
-Ce travail a été réalisé par Ibtissam Benabid.
+Ce travail a été réalisé par Ibtissam Benabid .
