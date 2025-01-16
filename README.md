@@ -2,6 +2,14 @@
 
 Ce projet est un modèle de plateforme d'apprentissage conçu pour démontrer l'utilisation de MongoDB et Redis dans une application Node.js. Il inclut des exemples de gestion des connexions aux bases de données, de mise en cache avec Redis, et de structuration d'une application Express avec des contrôleurs et des routes séparés. Ce modèle peut servir de point de départ pour développer des applications plus complexes.
 
+## Prerequisites
+- Install [Docker](https://www.docker.com/get-started) and [Docker Compose](https://docs.docker.com/compose/install/).
+- Ensure the docker-compose.yml file exists in the root directory
+- Start the containers:
+  
+   ```sh
+   docker-compose up -d
+  
 ## Installation et Lancement du Projet
 
 1. **Cloner le dépôt**
@@ -15,7 +23,6 @@ Modifiez le fichier .env à la racine du projet selon vos paramètres .
 3. **Installer les dépendances** :
     ```sh
      npm install
-
 
 4. **Démarrer l'application** :
     ```sh
